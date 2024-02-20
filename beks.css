@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(30, 30, 32);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.logo{
+    color: rgb(255, 107, 2);
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 40px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0 ;
+    height: 3px;
+    background: #e6e6e6;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.main img{
+    height: 500px;
+    width: auto;
+    margin-left: 100px;
+    margin-bottom: 200px;
+    clip-path: circle();
+}
+.button{
+    text-decoration: none;
+background: #e9e506;
+padding: 6px 30px;
+border: none;
+font-size: 16px;
+cursor: pointer;
+border-radius: 6px;
+transition: background-color 0.3s ease;
+}
+
+.button:hover{
+background: #fb8c00;
+}
+
+.content{
+height: 640px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 10%;
+justify-content: center;
+}
+
+.content h4{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+    }
+
+.content h4 span{
+color: #fb8c00;
+text-decoration: underline;
+}
+
+.content p.title{
+font-size: 44px;
+font-weight: 600;
+color: #fff;
+margin-top: 8px
+}
+
+.content p.subtitle{
+font-size: 16px;
+color: #ccc;
+margin-top: 20px;
+}
+
+.content img{
+width: 250px;
+height: auto;
+margin-top: 15px;
+margin-right: 8%;
+}
+
+
+/* HOBBIES SECTION */
+
+
+.hobbies{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #fb8c00;
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.para p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+
+/* ABOUT PAGE */
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+
+.main1{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: #fb8c00;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+/* Achievments */
+.achievments h1{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+.achievments{
+    background: #191919;
+}
+.achievments img{
+    width: 700px;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+/* FOOTER */
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fb8c00;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
